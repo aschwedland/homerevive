@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/495c211b9d.js" crossorigin="anonymous"></script>
+        <title>Coming Soon</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="preload" href="{% static 'images/services/exteriors.webp' %}">
+    </head>
+    <body>
+        <section class="coming-soon">
+            <img src="{% static 'images/services/exteriors.webp' %}" alt="" class="coming-soon-image">
+            <div class="coming-soon-info">
+                <h1 class="title coming-soon-title">
+                    Great Things Are Coming
+                </h1>
+                <p class="description">
+                    Check us out on our social media or give us a call to find out more in the meantime!
+                </p>
+                <div class="socials">
+                    <a href="" class="social"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="tel:" class="social"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,223 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block seo %} 
+<meta property="og:title" content=""/>
+<meta property="og:url" content=""/>
+<meta property="og:image" content=""/>
+<meta property=”og:image:width” content=”1200″/>
+<meta property=”og:image:height” content=”630″/>
+<meta property="og:description" content=""/>
+<meta property="og:type" content="website">
+<meta name="description" content="">
+<link rel="canonical" href="">
+<!-- Preload Images here -->
+ <link rel="preload" href="{% static 'images/home/hero.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/home/about-hero.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/home/kitchen.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/home/bathroom.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/home/interiors.webp' %}" as="image">
+{% endblock %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block home %} 
+active-link
+{% endblock %}
+
+{% block main %}
+<section class="hero background-image">
+    <h1 class="title hero-title">
+        Exceptional Home Remodeling & Renovations
+    </h1>
+    <div class="btn-area">
+        <a href="" class="btn">Get A Free Estimate</a>
+    </div>
+</section>
+<section class="home-about">
+    <div class="home-about-info">
+        <h2 class="home-about-title">
+            The Leading Mile High Remodeling Company
+        </h2>
+        <p class="description home-about-description">
+            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+        </p>
+        <div class="btn-area">
+            <a href="" class="secondary-btn btn">More About Us</a>
+        </div>
+    </div>
+    <div class="home-about-image background-image"></div>
+</section>
+<section class="why-us">
+    <h2 class="secondary-title why-title">
+        Why Choose Us
+    </h2>
+    <div class="reasons-list">
+        <div class="reason">
+            <h3 class="secondary-title reason-title">
+                Easy Financing
+            </h3>
+            <p class="description">
+                I'm a paragraph. Click here to add your own text.
+            </p>
+        </div>
+        <div class="reason">
+            <h3 class="secondary-title reason-title">
+                Free, At Home Consultations
+            </h3>
+            <p class="description">
+                I'm a paragraph. Click here to add your own text.
+            </p>
+        </div>
+        <div class="reason">
+            <h3 class="secondary-title reason-title">
+                Award Winning Service
+            </h3>
+            <p class="description">
+                I'm a paragraph. Click here to add your own text.
+            </p>
+        </div>
+        <div class="reason">
+            <h3 class="secondary-title reason-title">
+                Licensed & Insured
+            </h3>
+            <p class="description">
+                I'm a paragraph. Click here to add your own text.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="home-services">
+    <h2 class="secondary-title home-services-title">
+        Our Services Include
+    </h2>
+    <div class="home-services-list">
+        <div class="home-service kitchens background-image">
+            <a href="" class="home-service-link">Kitchens</a>
+        </div>
+        <div class="home-service bathrooms background-image">
+            <a href="" class="home-service-link">Bathrooms</a>
+        </div>
+        <div class="home-service interiors background-image">
+            <a href="" class="home-service-link">Interiors</a>
+        </div>
+    </div>
+    <div class="home-services-btn-area btn-area">
+        <a href="" class="secondary-btn btn">See All Services</a>
+    </div>
+</section>
+<section class="testimonial-section">
+    <h2 class="secondary-title testminonials-title">
+        Satisfied Customers
+    </h2>
+    <div class="testimonial-list">
+        <div class="testimonial">
+            <div class="icon-div">
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <div class="testimonial-content">
+                <h3 class="testimonial-name">
+                    Dave Reddington
+                </h3>
+                <p class="description">
+                    “I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.”
+                </p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="icon-div">
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <div class="testimonial-content">
+                <h3 class="testimonial-name">
+                    Amelia Banks
+                </h3>
+                <p class="description">
+                    “I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.”
+                </p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="icon-div">
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <div class="testimonial-content">
+                <h3 class="testimonial-name">
+                    Kenny Stutes
+                </h3>
+                <p class="description">
+                    “I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.”
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-section">
+    <div class="contact-header">
+        <h2 class="secondary-title contact-title">
+            Let's Discuss Your Next Project
+        </h2>
+        <p class="description contact-description">
+            Fill out the form, or call us to set up a free in-home consultation.
+        </p>
+        <div class="service-areas">
+            <h6 class="secondary-title service-area-title">
+                Service Areas:
+            </h6>
+            <p class="description">
+                Denver, Colorado Springs, Pueblo, Fort Collins
+            </p>
+        </div>
+    </div>
+    <form action="" method="post" class="contact-form">
+        <div class="input-group">
+            <div class="input">
+                <label for="first" class="input-label">First Name *</label>
+                <input rquired id="first" name="first" type="text" class="input-field">
+            </div>
+            <div class="input">
+                <label for="last" class="input-label">Last Name *</label>
+                <input rquired id="last" name="last" type="text" class="input-field">
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input">
+                <label for="email" class="input-label">Email *</label>
+                <input rquired id="email" name="email" type="text" class="input-field">
+            </div>
+            <div class="input">
+                <label for="phone" class="input-label">Phone</label>
+                <input id="phone" name="phone" type="text" class="input-field">
+            </div>
+        </div>
+        <div class="input">
+            <label for="address" class="input-label">Address</label>
+            <input id="address" name="address" type="text" class="input-field">
+        </div>
+        <div class="input">
+            <label for="subject" class="input-label">Subject</label>
+            <input id="subject" name="subject" type="text" class="input-field">
+        </div>
+        <div class="input">
+            <label for="message" class="input-label">Type your message here...</label>
+            <textarea rows="5" name="message" id="message" class="input-field"></textarea>
+        </div>
+        <div class="submit-btn">
+            <button type="submit" class="btn contact-btn">Submit</button>
+        </div>
+    </form>
+    <div class="contact-info">
+        <p class="description">
+            123 Main Street Denver, CO 80123
+        </p>
+        <div class="contact-link">
+            <a href="mailto:">info@mysite.com</a>
+        </div>
+        <div class="contact-link">
+            <a href="tel:+1">(123) 456-7890</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

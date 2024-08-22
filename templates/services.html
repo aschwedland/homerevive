@@ -1,0 +1,119 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block seo %} 
+<meta property="og:title" content=""/>
+<meta property="og:url" content=""/>
+<meta property="og:image" content=""/>
+<meta property=”og:image:width” content=”1200″/>
+<meta property=”og:image:height” content=”630″/>
+<meta property="og:description" content=""/>
+<meta property="og:type" content="website">
+<meta name="description" content="">
+<link rel="canonical" href="">
+<!-- Preload Images here -->
+ <link rel="preload" href="{% static 'images/services/additions.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/services/bathroom.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/services/exteriors.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/services/interiors.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/services/kitchen.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/services/sunrooms.webp' %}" as="image">
+{% endblock %}
+
+{% block title %}
+Services
+{% endblock %}
+
+{% block services %} 
+active-link
+{% endblock %}
+
+{% block main %}
+<section class="services-hero">
+    <h1 class="title services-title">
+        Our Services
+    </h1>
+    <p class="description">
+        Let us help you make your dreams a reality!
+    </p>
+</section>
+<section class="services">
+    <div class="services-list">
+        <a href="{% url 'specific-service' %}" class="service">
+            <img src="{% static 'images/services/kitchen.webp' %}" alt="" class="service-image">
+            <div class="service-info">
+                <h3 class="service-title">
+                    Kitchen
+                </h3>
+                <p class="description">
+                    Describe your image here. Use catchy text to tell people the story behind the photo.
+                    Go to “Manage Media” to add your content.
+                </p>
+            </div>
+        </a>
+        <a href="{% url 'specific-service' %}" class="service">
+            <img src="{% static 'images/services/bathroom.webp' %}" alt="" class="service-image">
+            <div class="service-info">
+                <h3 class="service-title">
+                    Bathrooms
+                </h3>
+                <p class="description">
+                    Describe your image here. Use catchy text to tell people the story behind the photo.
+                    Go to “Manage Media” to add your content.
+                </p>
+            </div>
+        </a>
+        <a href="{% url 'specific-service' %}" class="service">
+            <img src="{% static 'images/services/interiors.webp' %}" alt="" class="service-image">
+            <div class="service-info">
+                <h3 class="service-title">
+                    Interiors
+                </h3>
+                <p class="description">
+                    Describe your image here. Use catchy text to tell people the story behind the photo.
+                    Go to “Manage Media” to add your content.
+                </p>
+            </div>
+        </a>
+    </div>
+    <div class="services-list">
+        <a href="{% url 'specific-service' %}" class="service">
+            <img src="{% static 'images/services/additions.webp' %}" alt="" class="service-image">
+            <div class="service-info">
+                <h3 class="service-title">
+                    Additions
+                </h3>
+                <p class="description">
+                    Describe your image here. Use catchy text to tell people the story behind the photo.
+                    Go to “Manage Media” to add your content.
+                </p>
+            </div>
+        </a>
+        <a href="{% url 'specific-service' %}" class="service">
+            <img src="{% static 'images/services/exteriors.webp' %}" alt="" class="service-image">
+            <div class="service-info">
+                <h3 class="service-title">
+                    Exteriors
+                </h3>
+                <p class="description">
+                    Describe your image here. Use catchy text to tell people the story behind the photo.
+                    Go to “Manage Media” to add your content.                   
+                </p>
+            </div>
+        </a>
+        <a href="{% url 'specific-service' %}" class="service">
+            <img src="{% static 'images/services/sunrooms.webp' %}" alt="" class="service-image">
+            <div class="service-info">
+                <h3 class="service-title">
+                    Sunrooms
+                </h3>
+                <p class="description">
+                    Describe your image here. Use catchy text to tell people the story behind the photo.
+                    Go to “Manage Media” to add your content.                    
+                </p>
+            </div>
+        </a>
+    </div>
+</section>
+{% include 'last-call.html' %}
+{% endblock %}

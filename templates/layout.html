@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="og:site_name" content="">
+        {% block seo %}{% endblock %}
+        <link rel="preload" href="{% static 'css/style.css' %}" as="style">
+        <link rel="preload" href="{% static 'js/script.js' %}" as="script">
+        <link rel="preload" href="" as="image">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="icon" type="image/ico" href="{% static 'images/logo/favicon.ico' %}" >
+
+        <script src="https://kit.fontawesome.com/495c211b9d.js" crossorigin="anonymous"></script>
+
+        <title>
+            {% block title %}{% endblock %}
+        </title>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="navbar">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link {% block home %}{% endblock %}" href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% block about %}{% endblock %}" href="{% url 'about' %}">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% block services %}{% endblock %}" href="{% url 'services' %}">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% block contact %}{% endblock %}" href="{% url 'contact' %}">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <nav>
+                    <div class="logo-section">
+                        <h1>Logo</h1>
+                    </div>
+                    <div class="ham-menu mobile">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            {% block main %}{% endblock %}
+        </main>
+        <footer>
+            <div class="socials">
+                <ul class="social-list">
+                    <li>
+                        <a class="social-item" target="_blank" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a class="social-item" target="_blank" href=""><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a class="social-item" target="_blank" href=""><i class="fa-brands fa-google"></i></a>
+                    </li>
+                    <li>
+                        <a class="social-item" target="_blank" href=""><i class="fa-brands fa-yelp"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <small>
+                    &copy; 2024 Created and powered by 
+                    <a target="_blank" href="https://pixel-master.com">
+                        Pixel Master Technologies
+                    </a>
+                </small>
+            </div>
+        </footer>
+        <script src="{% static 'js/script.js' %}"></script>
+    </body>
+</html>
