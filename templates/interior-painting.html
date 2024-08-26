@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block seo %} 
+<meta property="og:title" content="Interior Painting | Denver Colorado | Home Revive"/>
+<meta property="og:url" content="https://homerevivellc.net/interior-painting"/>
+<meta property="og:image" content="{% static 'images/services/kitchen.webp' %}"/>
+<meta property=”og:image:width” content=”1200″/>
+<meta property=”og:image:height” content=”630″/>
+<meta property="og:description" content="Our expert team in Denver is here to help. We are licensed and insured interior painting professionals and use only the best products for our projects."/>
+<meta property="og:type" content="article">
+<meta name="description" content="Our expert team in Denver is here to help. We are licensed and insured interior painting professionals and use only the best products for our projects.">
+<link rel="canonical" href="https://homerevivellc.net/interior-painting">
+<link rel="alternate" href="https://homerevivellc.net/interior-painting" hreflang="en"/>
+<!-- Preload Images here -->
+ <link rel="preload" href="{% static 'images/services/kitchen.webp' %}" as="image">
+{% endblock %}
+
+{% block title %}
+Interior Painting | Denver Colorado | Home Revive
+{% endblock %}
+
+{% block main %}
+<section class="specific-hero">
+    <div class="specific-info">
+        <h1 class="title specific-title">
+            Denver Interior Painting
+        </h1>
+        <p class="specific-description description">
+            Whatever space you need painted, our expert team in Denver is here to help. 
+            We are licensed and insured interior painting professionals and use only the best products for our projects. 
+            At Home Revive, we pride ourselves on working every project until you are completely satisfied. 
+            If you have any issues then you can take it up with the owner and it will be resolved as soon as possible.
+        </p>
+    </div>
+    <div class="specific-image background-image kitchen" title="Newly painted kitchen"></div>
+</section>
+<section class="guarantee specific-overview">
+    <h2 class="secondary-title guarantee-title">
+        Interior Painting Overview
+    </h2>
+    <p class="description guarantee-description">
+        As professional painters, we understand that a fresh coat of paint can completely change the look and feel of a room, making it more vibrant, cozy, or sophisticated, depending on your style. We start by working closely with you to choose the perfect colors that complement your home’s design and your personal taste. Whether you’re going for a bold, modern look or something more subtle and classic, we offer expert advice to help you make the right choice.
+    </p>
+    <p class="description guarantee-description">
+        Before we even pick up a brush, we meticulously prepare your walls to ensure a flawless finish. This includes filling in cracks and holes, sanding rough spots, and priming the surfaces if needed. We know that the key to a beautiful paint job is in the preparation, so we take the time to get it right. Once the prep work is done, we carefully apply the paint, using techniques that guarantee smooth, even coverage with no streaks or drips. Our attention to detail extends to clean lines around trim, ceilings, and corners, giving your rooms a polished, professional appearance.
+    </p>
+    <p class="description guarantee-description">
+        We also respect your home as if it were our own. Throughout the entire process, we protect your furniture and flooring, keeping the work area tidy and minimizing disruption to your daily life. After the painting is complete, we do a thorough cleanup, leaving your home spotless and your walls looking stunning. At the end of the day, our goal is to deliver a high-quality interior painting job that not only meets but exceeds your expectations. When you choose our interior painting service, you’re choosing craftsmanship, professionalism, and a result that you’ll love for years to come.
+    </p>
+</section>
+{% include 'last-call.html' %}
+{% endblock %}

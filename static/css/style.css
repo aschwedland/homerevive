@@ -40,9 +40,9 @@ a {
     text-decoration: none;
 }
 :root {
-    --primary: #A26028;
+    --primary: #23689F;
     --secondary: #1E1E1E;
-    --tertiary: #FFF;
+    --tertiary: #DCDCDC;
     --background: #F5F5F5;
     --font-color: #1E1E1E;
     --animation-timing: all 500ms ease;
@@ -128,37 +128,37 @@ nav {
     background-color: var(--primary);
     border-radius: 25px;
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: var(--animation-timing);
+    transition: all 300ms ease;
 }
 .ham-menu span:nth-child(1) {
-    top: 30%;
+    top: 60%;
 }
 .ham-menu span:nth-child(3) {
-    top: 70%;
+    top: 100%;
 }
 .ham-menu.active span {
     background-color: var(--secondary);
 }
 .ham-menu.active span:nth-child(1) {
-    top: 50%;
+    top: 80%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 .ham-menu.active span:nth-child(2) {
     opacity: 0;
 }
 .ham-menu.active span:nth-child(3) {
-    top: 50%;
+    top: 80%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 .logo-section {
     grid-area: logo;
 }
 .header-logo {
-    height: 60px;
-    width: 250px;
+    height: 75px;
+    width: 75px;
 }
 /* Home Page */
 .btn-area {
@@ -243,14 +243,14 @@ nav {
     justify-content: center;
     align-items: center;
 }
-.kitchens {
-    background-image: url('/static/images/home/kitchen.webp');
+.remodel {
+    background-image: url('/static/images/home/remodel.webp');
 }
-.bathrooms {
-    background-image: url('/static/images/home/bathroom.webp');
+.deck {
+    background-image: url('/static/images/home/deck.webp');
 }
-.interiors {
-    background-image: url('/static/images/home/interiors.webp');
+.appliance-repair {
+    background-image: url('/static/images/home/appliance-repair.webp');
 }
 .home-service-link {
     color: white;
@@ -416,8 +416,29 @@ nav {
     padding: 2rem;
     text-align: center;
 }
+.remodel {
+    background-image: url('/static/images/services/remodel.webp');
+}
+.exterior-painting {
+    background-image: url('/static/images/services/exteriors.webp');
+}
+.appliance-repair {
+    background-image: url('/static/images/services/appliance-repair.webp');
+}
+.deck {
+    background-image: url('/static/images/services/deck.webp');
+}
+.fence {
+    background-image: url('/static/images/services/fence.webp');
+}
 .kitchen {
     background-image: url('/static/images/services/kitchen.webp');
+}
+.tile {
+    background-image: url('/static/images/services/tile.webp');
+}
+.wood {
+    background-image: url('/static/images/services/wood.webp');
 }
 .specific-image {
     height: 300px;
@@ -573,7 +594,8 @@ footer {
         z-index: 0;
     }
     .header-logo {
-        height: 75px;
+        height: 125px;
+        width: 125px;
     }
     .free-quote-btn {
         color: white;
@@ -738,7 +760,7 @@ footer {
         justify-content: center;
     }
     .process-info {
-        max-width: 600px;
+        max-width: 700px;
         padding: 6rem 1rem;
     }
     .process-title, .guarantee-title, .services-title {
@@ -747,7 +769,7 @@ footer {
     .process-list, .process-item {
         flex-direction: row;
     }
-    .item-image, .item-info {
+    .process-item, .item-image, .item-info {
         height: 425px;
         width: 50%;
     }
@@ -776,6 +798,9 @@ footer {
         display: flex;
         gap: 2rem;
     }
+    .service {
+        max-width: 33%;
+    }
     .service-image {
         height: 500px;
         width: auto;
@@ -793,8 +818,9 @@ footer {
     .specific-hero {
         display: flex;
         flex-direction: row-reverse;
-        height: 800px;
-        padding: 12rem 0 4rem 0;
+        height: 80vh;
+        margin-top: 5rem;
+        padding-bottom: 4rem;
     }
     .specific-image, .specific-info {
         height: 100%;
@@ -808,6 +834,9 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .specific-title, .specific-description, .guarantee-title {
+        max-width: 660px;
     }
     .specific-overview {
         padding-bottom: 4rem;

@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block seo %} 
+<meta property="og:title" content="Denver Fence Repair & Installation | Home Revive"/>
+<meta property="og:url" content="https://homerevivellc.net/fence-repair-installation"/>
+<meta property="og:image" content="{% static 'images/services/fence.webp' %}"/>
+<meta property=”og:image:width” content=”1200″/>
+<meta property=”og:image:height” content=”630″/>
+<meta property="og:description" content="Whether you need a custom fence design or repairs to an existing one, we work with a variety of materials to match your needs and style."/>
+<meta property="og:type" content="website">
+<meta name="description" content="Whether you need a custom fence design or repairs to an existing one, we work with a variety of materials to match your needs and style.">
+<link rel="canonical" href="https://homerevivellc.net/fence-repair-installation">
+<link rel="alternate" href="https://homerevivellc.net/fence-repair-installation" hreflang="en"/>
+<!-- Preload Images here -->
+ <link rel="preload" href="{% static 'images/services/fence.webp' %}" as="image">
+{% endblock %}
+
+{% block title %}
+Denver Fence Repair & Installation | Home Revive
+{% endblock %}
+
+{% block main %}
+<section class="specific-hero">
+    <div class="specific-info">
+        <h1 class="title specific-title">
+            Denver Fence Experts
+        </h1>
+        <p class="specific-description description">
+            We provide durable, long-lasting solutions that enhance your property’s privacy, security, and curb appeal. Whether you need a custom fence design or repairs to an existing one, we work with a variety of materials, including wood, vinyl, metal, and composite, to match your needs and style. We handle everything from setting sturdy posts to expertly repairing damaged or leaning panels, ensuring your fence stands strong for years to come. As licensed and insured contractors, we guarantee quality craftsmanship with every project. Plus, we offer free estimates, so you know exactly what to expect before we get started.
+        </p>
+    </div>
+    <div class="specific-image background-image fence" title="Completed fence project"></div>
+</section>
+<section class="guarantee specific-overview">
+    <h2 class="secondary-title guarantee-title">
+        Fence Repair & Installation Overview
+    </h2>
+    <p class="description guarantee-description">
+        When it comes to repairs, our team excels in diagnosing and fixing issues quickly and effectively. We handle everything from stabilizing leaning posts and replacing damaged panels to reinforcing existing structures. Our approach ensures that your fence not only looks great but also performs reliably over time. We use high-quality materials and proven techniques to restore your fence to its original condition, enhancing its durability and longevity.
+    </p>
+    <p class="description guarantee-description">
+        This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.
+    </p>
+    <p class="description guarantee-description">
+        Our commitment to quality extends to every aspect of our service, from initial consultation to final inspection. We provide free estimates to give you a clear understanding of the scope and cost of your project before we begin. As licensed and insured professionals, we take pride in delivering exceptional results and maintaining open communication throughout the process. At Home Revive, we’re here to ensure that your fence is not just a boundary but a beautiful and functional part of your property.
+    </p>
+</section>
+{% include 'last-call.html' %}
+{% endblock %}

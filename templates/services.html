@@ -2,26 +2,30 @@
 {% load static %}
 
 {% block seo %} 
-<meta property="og:title" content=""/>
-<meta property="og:url" content=""/>
-<meta property="og:image" content=""/>
+<meta property="og:title" content="Denver Remodel & Repair Services | Home Revive | Co"/>
+<meta property="og:url" content="https://homerevivellc.net/services"/>
+<meta property="og:image" content="{% static 'images/services/exteriors.webp' %}"/>
 <meta property=”og:image:width” content=”1200″/>
 <meta property=”og:image:height” content=”630″/>
-<meta property="og:description" content=""/>
-<meta property="og:type" content="website">
-<meta name="description" content="">
-<link rel="canonical" href="">
+<meta property="og:description" content="We are experts in every service that we offer. Rest assured knowing that you are in good hands with Home Revive"/>
+<meta property="og:type" content="article">
+<meta name="description" content="We are experts in every service that we offer. Rest assured knowing that you are in good hands with Home Revive">
+<link rel="canonical" href="https://homerevivellc.net/services">
+<link rel="alternate" href="https://homerevivellc.net/services" hreflang="en"/>
+
 <!-- Preload Images here -->
- <link rel="preload" href="{% static 'images/services/additions.webp' %}" as="image">
- <link rel="preload" href="{% static 'images/services/bathroom.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/services/appliance-repair.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/services/deck.webp' %}" as="image">
  <link rel="preload" href="{% static 'images/services/exteriors.webp' %}" as="image">
- <link rel="preload" href="{% static 'images/services/interiors.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/services/fence.webp' %}" as="image">
  <link rel="preload" href="{% static 'images/services/kitchen.webp' %}" as="image">
- <link rel="preload" href="{% static 'images/services/sunrooms.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/services/remodel.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/services/tile.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/services/wood.webp' %}" as="image">
 {% endblock %}
 
 {% block title %}
-Services
+Denver Remodel & Repair Services | Home Revive | Co
 {% endblock %}
 
 {% block services %} 
@@ -39,77 +43,95 @@ active-link
 </section>
 <section class="services">
     <div class="services-list">
-        <a href="{% url 'specific-service' %}" class="service">
-            <img src="{% static 'images/services/kitchen.webp' %}" alt="" class="service-image">
+        <a href="{% url 'remodel' %}" class="service">
+            <img src="{% static 'images/services/remodel.webp' %}" loading="lazy" alt="Whole home remodel services" class="service-image">
             <div class="service-info">
                 <h3 class="service-title">
-                    Kitchen
+                    Whole Home Remodels
                 </h3>
                 <p class="description">
-                    Describe your image here. Use catchy text to tell people the story behind the photo.
-                    Go to “Manage Media” to add your content.
+                    Our whole home remodels are designed to completely transform your living space. We handle everything from structural changes to aesthetic updates, ensuring that every detail aligns with your vision. Whether you’re looking to modernize an older home or create a more functional layout, we manage every aspect of the remodel with precision, making your dream home a reality.
                 </p>
             </div>
         </a>
-        <a href="{% url 'specific-service' %}" class="service">
-            <img src="{% static 'images/services/bathroom.webp' %}" alt="" class="service-image">
+        <a href="{% url 'exterior-painting' %}" class="service">
+            <img src="{% static 'images/services/exteriors.webp' %}" loading="lazy" alt="Exterior painting services" class="service-image">
             <div class="service-info">
                 <h3 class="service-title">
-                    Bathrooms
+                    Exterior Painting
                 </h3>
                 <p class="description">
-                    Describe your image here. Use catchy text to tell people the story behind the photo.
-                    Go to “Manage Media” to add your content.
+                    We know that the exterior of your home is the first thing people see, and we take pride in delivering a paint job that not only looks stunning but also protects your home from the elements. Our team uses high-quality, weather-resistant paints and pays close attention to surface preparation, ensuring a smooth, durable finish that will stand up to the toughest conditions.
                 </p>
             </div>
         </a>
-        <a href="{% url 'specific-service' %}" class="service">
-            <img src="{% static 'images/services/interiors.webp' %}" alt="" class="service-image">
+        <a href="{% url 'interior-painting' %}" class="service">
+            <img src="{% static 'images/services/kitchen.webp' %}" loading="lazy" alt="Interior painting services" class="service-image">
             <div class="service-info">
                 <h3 class="service-title">
-                    Interiors
+                    Interior Painting
                 </h3>
                 <p class="description">
-                    Describe your image here. Use catchy text to tell people the story behind the photo.
-                    Go to “Manage Media” to add your content.
+                    When it comes to interior painting, we believe in creating spaces that reflect your style and enhance your home’s atmosphere. Our expert painters take care of everything from prepping the surfaces to applying the perfect coat of paint, making sure every room looks flawless. We work with you to choose colors that complement your decor and bring your vision to life.
                 </p>
             </div>
         </a>
     </div>
     <div class="services-list">
-        <a href="{% url 'specific-service' %}" class="service">
-            <img src="{% static 'images/services/additions.webp' %}" alt="" class="service-image">
+        <a href="{% url 'fence' %}" class="service">
+            <img src="{% static 'images/services/fence.webp' %}" loading="lazy" alt="Fence repair & installation services" class="service-image">
             <div class="service-info">
                 <h3 class="service-title">
-                    Additions
+                    Fence Repair & Installation
                 </h3>
                 <p class="description">
-                    Describe your image here. Use catchy text to tell people the story behind the photo.
-                    Go to “Manage Media” to add your content.
+                    A well-built fence adds privacy, security, and curb appeal to your property. Whether you need a brand new fence installed or repairs to an existing one, we ensure that your fence is sturdy, straight, and built to last. We use top-quality materials and expert craftsmanship to deliver a fence that enhances your home’s exterior and stands the test of time.
                 </p>
             </div>
         </a>
-        <a href="{% url 'specific-service' %}" class="service">
-            <img src="{% static 'images/services/exteriors.webp' %}" alt="" class="service-image">
+        <a href="{% url 'deck' %}" class="service">
+            <img src="{% static 'images/services/deck.webp' %}" loading="lazy" alt="Deck repair & installation services" class="service-image">
             <div class="service-info">
                 <h3 class="service-title">
-                    Exteriors
+                    Deck Repair & Installation
                 </h3>
                 <p class="description">
-                    Describe your image here. Use catchy text to tell people the story behind the photo.
-                    Go to “Manage Media” to add your content.                   
+                    Your deck should be a place where you can relax and enjoy your outdoor space. Whether you’re looking to build a new deck or repair an existing one, we handle everything from design to construction with a focus on durability and aesthetics. We use high-quality materials and expert techniques to create a deck that’s both beautiful and functional, perfect for entertaining or simply enjoying the outdoors.                   
                 </p>
             </div>
         </a>
-        <a href="{% url 'specific-service' %}" class="service">
-            <img src="{% static 'images/services/sunrooms.webp' %}" alt="" class="service-image">
+        <a href="{% url 'appliance-repair' %}" class="service">
+            <img src="{% static 'images/services/appliance-repair.webp' %}" loading="lazy" alt="Appliance repair services" class="service-image">
             <div class="service-info">
                 <h3 class="service-title">
-                    Sunrooms
+                    Appliance Repair
                 </h3>
                 <p class="description">
-                    Describe your image here. Use catchy text to tell people the story behind the photo.
-                    Go to “Manage Media” to add your content.                    
+                    When your appliances aren’t working properly, it can disrupt your daily routine. Our goal is to get your kitchen and laundry room back in order quickly and efficiently. From fixing a faulty fridge to repairing a malfunctioning washing machine, we diagnose the issue and provide reliable repairs that extend the life of your appliances so you don't have to waste money on new appliances.                    
+                </p>
+            </div>
+        </a>
+    </div>
+    <div class="services-list">
+        <a href="{% url 'tile-installation' %}" class="service">
+            <img src="{% static 'images/services/tile.webp' %}" loading="lazy" alt="Tile installation services" class="service-image">
+            <div class="service-info">
+                <h3 class="service-title">
+                    Tile Installation
+                </h3>
+                <p class="description">
+                    Tile flooring is a durable and stylish option for any room in your home. We can do everything from helping you choose the right tiles to expertly laying them for a seamless finish. We focus on precision, ensuring that each tile is perfectly aligned and that the grout work is flawless, giving your floors a polished, professional look.
+                </p>
+            </div>
+        </a>
+        <a href="{% url 'wood-flooring-installation' %}" class="service">
+            <img src="{% static 'images/services/wood.webp' %}" loading="lazy" alt="Wood flooring installation services" class="service-image">
+            <div class="service-info">
+                <h3 class="service-title">
+                    Wood Flooring Installation
+                </h3>
+                <p class="description">
+                    Wood flooring adds warmth and elegance to any space. We are all about attention to detail, from selecting the right type of wood to ensuring a smooth, even installation. We take care of every step, including subfloor preparation, to guarantee that your new wood floors are beautiful, durable, and perfectly suited to your home.                   
                 </p>
             </div>
         </a>

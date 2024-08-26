@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block seo %} 
+<meta property="og:title" content="Exterior Painting | Denver Colorado | Home Revive"/>
+<meta property="og:url" content="https://homerevivellc.net/exterior-painting"/>
+<meta property="og:image" content="{% static 'images/services/exteriors.webp' %}"/>
+<meta property=”og:image:width” content=”1200″/>
+<meta property=”og:image:height” content=”630″/>
+<meta property="og:description" content="With years of experience in Denver, we use high-quality, weather-resistant paints to ensure long-lasting protection against the elements."/>
+<meta property="og:type" content="article">
+<meta name="description" content="With years of experience in Denver, we use high-quality, weather-resistant paints to ensure long-lasting protection against the elements.">
+<link rel="canonical" href="https://homerevivellc.net/exterior-painting">
+<link rel="alternate" href="https://homerevivellc.net/exterior-painting" hreflang="en"/>
+<!-- Preload Images here -->
+ <link rel="preload" href="{% static 'images/services/exteriors.webp' %}" as="image">
+{% endblock %}
+
+{% block title %}
+Exterior Painting | Denver Colorado | Home Revive
+{% endblock %}
+
+{% block main %}
+<section class="specific-hero">
+    <div class="specific-info">
+        <h1 class="title specific-title">
+            Denver Exterior Painting
+        </h1>
+        <p class="specific-description description">
+            Our exterior painting service is all about giving your home a fresh look that lasts. With years of experience as professional painters in Denver, we use high-quality, weather-resistant paints to ensure long-lasting protection against the elements. We start with comprehensive surface preparation, including power washing and necessary repairs, to guarantee a smooth, flawless finish. Whether you’re updating your home’s current color or trying something new, we offer custom color consultations to help you choose the perfect shade. Boost your curb appeal with our expert craftsmanship—affordable, reliable, and always top-notch.
+        </p>
+    </div>
+    <div class="specific-image background-image exterior-painting" title="Newly painted exterior of a house"></div>
+</section>
+<section class="guarantee specific-overview">
+    <h2 class="secondary-title guarantee-title">
+        Exterior Painting Overview
+    </h2>
+    <p class="description guarantee-description">
+        Designed to not only refresh the look of your home but also provide long-lasting protection against the elements. With years of experience in exterior painting, we understand the importance of using high-quality, weather-resistant paints that stand up to harsh conditions. We specialize in painting various surfaces, including stucco, brick, and siding, ensuring a durable and beautiful finish no matter the material. Our eco-friendly painting options allow you to enhance your home’s curb appeal while being mindful of the environment.
+    </p>
+    <p class="description guarantee-description">
+        The process begins with a thorough consultation where we assess your home’s exterior and discuss your goals. We offer expert advice on color selection, including professional exterior trim painting services, to help you choose the perfect shade that complements your home’s architecture and style. Before any paint is applied, we handle all necessary surface preparation, including power washing, sanding, and repairing any damage, ensuring that the paint adheres properly and looks flawless. Whether you have a historic home that requires a delicate touch or a modern property needing a fresh update, our skilled painters deliver top-quality results that enhance your home’s value and aesthetic appeal.
+    </p>
+    <p class="description guarantee-description">
+        We pride ourselves on our fast and efficient exterior painting process, without compromising on quality. We understand that your time is valuable, so we work diligently to complete your project on schedule. Our commitment to excellence is backed by a satisfaction guarantee, meaning we don’t consider the job finished until you’re completely happy with the results. From the initial estimate and consultation to the final brushstroke, our exterior painting service is designed to protect your home and make it look its best for years to come.
+    </p>
+</section>
+{% include 'last-call.html' %}
+{% endblock %}

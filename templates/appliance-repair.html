@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block seo %} 
+<meta property="og:title" content="Denver Appliance Repair | Colorado | Home Revive"/>
+<meta property="og:url" content="https://homerevivellc.net/appliance-repair"/>
+<meta property="og:image" content="{% static 'images/services/appliance-repair.webp' %}"/>
+<meta property=”og:image:width” content=”1200″/>
+<meta property=”og:image:height” content=”630″/>
+<meta property="og:description" content="Our seasoned maintenance experts are equipped with years of experience and the latest tools to tackle any issue your household appliances might face."/>
+<meta property="og:type" content="article">
+<meta name="description" content="Our seasoned maintenance experts are equipped with years of experience and the latest tools to tackle any issue your household appliances might face.">
+<link rel="canonical" href="https://homerevivellc.net/appliance-repair">
+<link rel="alternate" href="https://homerevivellc.net/appliance-repair" hreflang="en"/>
+<!-- Preload Images here -->
+ <link rel="preload" href="{% static 'images/services/appliance-repair.webp' %}" as="image">
+{% endblock %}
+
+{% block title %}
+Denver Appliance Repair | Colorado | Home Revive
+{% endblock %}
+
+{% block main %}
+<section class="specific-hero">
+    <div class="specific-info">
+        <h1 class="title specific-title">
+            Denver Appliance Repair
+        </h1>
+        <p class="specific-description description">
+            When it comes to appliance repair, having a skilled technician on your side can make all the difference. At Home Revive, our seasoned maintenance experts are equipped with years of experience and the latest tools to tackle any issue your household appliances might face. From refrigerators and ovens to washing machines and dryers, our team specializes in diagnosing and fixing a wide range of problems efficiently and effectively.
+        </p>
+    </div>
+    <div class="specific-image background-image appliance-repair" title="Putting the finishing touches on a gas range repair"></div>
+</section>
+<section class="guarantee specific-overview">
+    <h2 class="secondary-title guarantee-title">
+        Appliance Repair Overview
+    </h2>
+    <p class="description guarantee-description">
+        We offer top-notch appliance repair services designed to keep your household running smoothly. With extensive experience and a commitment to excellence, our skilled technicians are adept at handling a variety of common and complex issues. Whether you're dealing with a malfunctioning refrigerator, a problematic oven, or a troublesome washing machine, we provide expert solutions to restore your appliances to optimal performance.
+    </p>
+    <p class="description guarantee-description">
+        Our comprehensive repair services cover all major household appliances. From addressing temperature inconsistencies and noise issues in your refrigerator to fixing heating elements and ignition problems in your oven, we ensure that every repair is executed with precision. Our expertise also extends to washing machine repair and dryer repair, where we tackle problems like leaks, spinning issues, and inadequate drying, ensuring your appliances function efficiently and reliably.
+    </p>
+    <p class="description guarantee-description">
+        At Home Revive, our focus is on delivering prompt and reliable appliance repair services. We pride ourselves on providing quality repairs that extend the lifespan of your appliances and minimize downtime. Trust our experienced technicians to handle your household appliance maintenance needs with professionalism and care, and enjoy the peace of mind that comes with knowing your appliances are in expert hands.
+    </p>
+</section>
+{% include 'last-call.html' %}
+{% endblock %}

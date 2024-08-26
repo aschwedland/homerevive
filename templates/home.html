@@ -2,25 +2,27 @@
 {% load static %}
 
 {% block seo %} 
-<meta property="og:title" content=""/>
-<meta property="og:url" content=""/>
-<meta property="og:image" content=""/>
+<meta property="og:title" content="Home Remodel & Repair | Denver Colorado | Home Revive"/>
+<meta property="og:url" content="https://homerevivellc.net"/>
+<meta property="og:image" content="{% static 'images/home/hero.webp' %}"/>
 <meta property=”og:image:width” content=”1200″/>
 <meta property=”og:image:height” content=”630″/>
-<meta property="og:description" content=""/>
+<meta property="og:description" content="A leading Denver contractor in home remodeling and maintenance. We take pride in our high-quality performance and exceptional customer service."/>
 <meta property="og:type" content="website">
-<meta name="description" content="">
-<link rel="canonical" href="">
+<meta name="description" content="A leading Denver contractor in home remodeling and maintenance. We take pride in our high-quality performance and exceptional customer service.">
+<link rel="canonical" href="https://homerevivellc.net">
+<link rel="alternate" href="https://homerevivellc.net" hreflang="en"/>
 <!-- Preload Images here -->
  <link rel="preload" href="{% static 'images/home/hero.webp' %}" as="image">
  <link rel="preload" href="{% static 'images/home/about-hero.webp' %}" as="image">
- <link rel="preload" href="{% static 'images/home/kitchen.webp' %}" as="image">
- <link rel="preload" href="{% static 'images/home/bathroom.webp' %}" as="image">
- <link rel="preload" href="{% static 'images/home/interiors.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/home/remodel.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/home/deck.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/home/appliance-repair.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/home/nextdoor.svg' %}" as="image">
 {% endblock %}
 
 {% block title %}
-
+Home Remodel & Repair | Denver Colorado | Home Revive
 {% endblock %}
 
 {% block home %} 
@@ -28,27 +30,27 @@ active-link
 {% endblock %}
 
 {% block main %}
-<section class="hero background-image">
+<section class="hero background-image" title="Denver Skyline">
     <h1 class="title hero-title">
-        Exceptional Home Remodeling & Renovations
+        Exceptional Home Remodeling & Maintenance
     </h1>
     <div class="btn-area">
-        <a href="" class="btn">Get A Free Estimate</a>
+        <a href="{% url 'contact' %}" class="btn">Get A Free Estimate</a>
     </div>
 </section>
 <section class="home-about">
     <div class="home-about-info">
         <h2 class="home-about-title">
-            The Leading Mile High Remodeling Company
+            Best Maintenance Company in Denver
         </h2>
         <p class="description home-about-description">
-            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+            We take pride in being Denver's top choice for home maintenance. With years of hands-on experience, we know what it takes to keep your home in tip-top shape, whether it's tackling those tricky plumbing issues, keeping your HVAC system running smoothly, or fixing any broken appliances. We don't just fix problems; we prevent them, saving you time, money, and stress in the long run. Our team is committed to providing reliable, top-notch service that ensures your home stays safe, comfortable, and efficient. When it comes to maintenance, we're the experts Denver homeowners trust.
         </p>
         <div class="btn-area">
-            <a href="" class="secondary-btn btn">More About Us</a>
+            <a href="{% url 'about' %}" class="secondary-btn btn">More About Us</a>
         </div>
     </div>
-    <div class="home-about-image background-image"></div>
+    <div class="home-about-image background-image" title="New modern kitchen blue gray"></div>
 </section>
 <section class="why-us">
     <h2 class="secondary-title why-title">
@@ -57,10 +59,11 @@ active-link
     <div class="reasons-list">
         <div class="reason">
             <h3 class="secondary-title reason-title">
-                Easy Financing
+                Quality Assured
             </h3>
             <p class="description">
-                I'm a paragraph. Click here to add your own text.
+                We take pride in our work, using the best materials and paying attention to every detail. 
+                When we’re on the job, you can relax knowing your home is in skilled, reliable hands.
             </p>
         </div>
         <div class="reason">
@@ -68,15 +71,15 @@ active-link
                 Free, At Home Consultations
             </h3>
             <p class="description">
-                I'm a paragraph. Click here to add your own text.
+                Whether it’s a kitchen overhaul or a new deck, we’ll walk through the details with you and figure out the best plan to bring your ideas to life.
             </p>
         </div>
         <div class="reason">
             <h3 class="secondary-title reason-title">
-                Award Winning Service
+                Customer Service Focused
             </h3>
             <p class="description">
-                I'm a paragraph. Click here to add your own text.
+                Our top priority is making sure you're happy every step of the way, whether we're remodeling something or handling routine maintenance.
             </p>
         </div>
         <div class="reason">
@@ -84,7 +87,8 @@ active-link
                 Licensed & Insured
             </h3>
             <p class="description">
-                I'm a paragraph. Click here to add your own text.
+                Rest assured knowing that your home is in safe, professional hands. 
+                Every project we take on is covered and protected completely
             </p>
         </div>
     </div>
@@ -94,21 +98,21 @@ active-link
         Our Services Include
     </h2>
     <div class="home-services-list">
-        <div class="home-service kitchens background-image">
-            <a href="" class="home-service-link">Kitchens</a>
+        <div class="home-service remodel background-image" title="Home remodel service">
+            <a href="" class="home-service-link">Home Remodels</a>
         </div>
-        <div class="home-service bathrooms background-image">
-            <a href="" class="home-service-link">Bathrooms</a>
+        <div class="home-service deck background-image" title="Deck repair and install service">
+            <a href="" class="home-service-link">Deck Repair/Install</a>
         </div>
-        <div class="home-service interiors background-image">
-            <a href="" class="home-service-link">Interiors</a>
+        <div class="home-service appliance-repair background-image" title="Appliance repair service">
+            <a href="" class="home-service-link">Appliance Repair</a>
         </div>
     </div>
     <div class="home-services-btn-area btn-area">
-        <a href="" class="secondary-btn btn">See All Services</a>
+        <a href="{% url 'services' %}" class="secondary-btn btn">See All Services</a>
     </div>
 </section>
-<section class="testimonial-section">
+<!-- <section class="testimonial-section">
     <h2 class="secondary-title testminonials-title">
         Satisfied Customers
     </h2>
@@ -153,7 +157,7 @@ active-link
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <section class="contact-section">
     <div class="contact-header">
         <h2 class="secondary-title contact-title">
@@ -167,11 +171,15 @@ active-link
                 Service Areas:
             </h6>
             <p class="description">
-                Denver, Colorado Springs, Pueblo, Fort Collins
+                Denver, Wheat Ridge, Lakewood, Arvada
             </p>
         </div>
     </div>
-    <form action="" method="post" class="contact-form">
+    <form action="https://formsubmit.co/homerevivecontracting@gmail.com" method="post" class="contact-form">
+        <input type="hidden" name="_subject" value="New Form submission!">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://homerevivellc.net/thank-you">
+        <input type="text" name="_honey" style="display:none">
         <div class="input-group">
             <div class="input">
                 <label for="first" class="input-label">First Name *</label>
@@ -209,14 +217,11 @@ active-link
         </div>
     </form>
     <div class="contact-info">
-        <p class="description">
-            123 Main Street Denver, CO 80123
-        </p>
         <div class="contact-link">
-            <a href="mailto:">info@mysite.com</a>
+            <a href="mailto:homerevivecontracting@gmail.com">homerevivecontracting@gmail.com</a>
         </div>
         <div class="contact-link">
-            <a href="tel:+1">(123) 456-7890</a>
+            <a href="tel:+17206438146">(720) 643-8146</a>
         </div>
     </div>
 </section>

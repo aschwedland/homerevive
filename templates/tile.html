@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block seo %} 
+<meta property="og:title" content="Denver Tile Installation | Colorado | Home Revive"/>
+<meta property="og:url" content="https://homerevivellc.net/tile-installation"/>
+<meta property="og:image" content="{% static 'images/services/tile.webp' %}"/>
+<meta property=”og:image:width” content=”1200″/>
+<meta property=”og:image:height” content=”630″/>
+<meta property="og:description" content="Our team meticulously handles every aspect of the installation process ensuring a flawless finish that stands the test of time."/>
+<meta property="og:type" content="article">
+<meta name="description" content="Our team meticulously handles every aspect of the installation process ensuring a flawless finish that stands the test of time.">
+<link rel="canonical" href="https://homerevivellc.net/tile-installation">
+<link rel="alternate" href="https://homerevivellc.net/tile-installation" hreflang="en"/>
+<!-- Preload Images here -->
+ <link rel="preload" href="{% static 'images/services/tile.webp' %}" as="image">
+{% endblock %}
+
+{% block title %}
+Denver Tile Installation | Colorado | Home Revive
+{% endblock %}
+
+{% block main %}
+<section class="specific-hero">
+    <div class="specific-info">
+        <h1 class="title specific-title">
+            Denver Tile Installation
+        </h1>
+        <p class="specific-description description">
+            We specialize in a wide range of tile materials, including ceramic, porcelain, natural stone, and glass. Our team meticulously handles every aspect of the installation process, from surface preparation to grout application, ensuring a flawless finish that stands the test of time. Whether you're looking to revamp your kitchen backsplash, upgrade your bathroom flooring, or create a stunning feature wall, we use state-of-the-art tools and techniques to achieve impeccable results.
+        </p>
+    </div>
+    <div class="specific-image background-image tile" title="Gray Tile Installation Project"></div>
+</section>
+<section class="guarantee specific-overview">
+    <h2 class="secondary-title guarantee-title">
+        Tile Installation Overview
+    </h2>
+    <p class="description guarantee-description">
+        At Home Revive, we provide expert tile installation services tailored to meet the unique needs of your home or business. Our seasoned professionals bring over many years of experience in handling a diverse range of tile materials, including ceramic, porcelain, natural stone, and glass. Whether you're looking to refresh your kitchen with a sleek backsplash, enhance your bathroom with elegant flooring, or create a striking feature wall, our team delivers precision and excellence in every project.
+    </p>
+    <p class="description guarantee-description">
+        Our tile installation process begins with a thorough site assessment, allowing us to recommend the best tile options and layout designs for your space. We ensure that all surfaces are meticulously prepared, including leveling and cleaning, to create a stable foundation for a flawless installation. Utilizing state-of-the-art tools and techniques, our expert tile installers handle every detail with care, from precise alignment and spacing to achieving a consistent pattern.
+    </p>
+    <p class="description guarantee-description">
+        To complete the installation, we expertly grout and seal your tiles, protecting them from moisture and wear while ensuring long-lasting durability. Our commitment to quality is evident in our final inspection, where we ensure that every aspect of your tile installation meets our high standards. Trust Home Revive for professional tile installation services that transform your space with beautiful, enduring results. Contact us today to get started!
+    </p>
+</section>
+{% include 'last-call.html' %}
+{% endblock %}

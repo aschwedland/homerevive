@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block seo %} 
+<meta property="og:title" content="Denver Home Remodel | Colorado | Home Revive"/>
+<meta property="og:url" content="https://homerevivellc.net/whole-home-remodel"/>
+<meta property="og:image" content="{% static 'images/services/remodel.webp' %}"/>
+<meta property=”og:image:width” content=”1200″/>
+<meta property=”og:image:height” content=”630″/>
+<meta property="og:description" content="We take a comprehensive approach to every project, whether you’re looking to update a single room or completely transform your entire home."/>
+<meta property="og:type" content="article">
+<meta name="description" content="We take a comprehensive approach to every project, whether you’re looking to update a single room or completely transform your entire home.">
+<link rel="canonical" href="https://homerevivellc.net/whole-home-remodel">
+<link rel="alternate" href="https://homerevivellc.net/whole-home-remodel" hreflang="en"/>
+<!-- Preload Images here -->
+ <link rel="preload" href="{% static 'images/services/remodel.webp' %}" as="image">
+{% endblock %}
+
+{% block title %}
+Denver Home Remodel | Colorado | Home Revive
+{% endblock %}
+
+{% block main %}
+<section class="specific-hero">
+    <div class="specific-info">
+        <h1 class="title specific-title">
+            Denver Home Remodel
+        </h1>
+        <p class="specific-decsription description">
+            We are all about turning your vision into a reality. 
+            We take a comprehensive approach, managing every detail from start to finish, whether you’re looking to update a single room or completely transform your entire home. 
+            With a focus on quality craftsmanship and functional design, we work closely with you to create a space that not only looks stunning but also meets your lifestyle needs. From structural changes to the finishing touches, we ensure that every aspect of the remodel is executed with precision and care. 
+            Your home is your most important investment, and we’re committed to delivering results that exceed your expectations.
+        </p>
+    </div>
+    <div class="specific-image background-image remodel" title="Complete living room remodel"></div>
+</section>
+<section class="guarantee specific-overview">
+    <h2 class="secondary-title guarantee-title">
+        Home Remodel Overview
+    </h2>
+    <p class="description guarantee-description">
+        A home remodel is more than just an upgrade—it’s an opportunity to reimagine your living space and tailor it to your unique needs and style. At Home Revive, we approach each remodel with a deep understanding that your home is a reflection of you. Whether you’re looking to open up your floor plan, modernize your kitchen, or create a more functional living space, our team of experts collaborates with you to design a plan that brings your vision to life. We focus on every detail, from the layout and materials to the finishing touches, ensuring that the final result is both beautiful and practical.
+    </p>
+    <p class="description guarantee-description">
+        The process begins with a thorough consultation, where we listen to your ideas, assess the space, and provide professional guidance to help you make informed decisions. We then create a detailed plan that outlines each step of the remodel, including timelines, materials, and budget considerations. Our goal is to make the remodeling process as smooth and stress-free as possible, keeping you informed and involved at every stage. We coordinate all aspects of the project, from permits and inspections to managing skilled trades, ensuring that the work is completed on time and to the highest standards.
+    </p>
+    <p class="description guarantee-description">
+        Quality craftsmanship is at the heart of everything we do. Our experienced team uses only the best materials and proven techniques to deliver results that stand the test of time. Whether it’s custom cabinetry, new flooring, or energy-efficient windows, we pay meticulous attention to detail to ensure that every element of your remodel is executed with precision. We don’t consider the job complete until you’re completely satisfied with the outcome. At Home Revive, your home remodel is more than just a project—it’s a transformation that enhances the value, comfort, and beauty of your home for years to come.
+    </p>
+</section>
+{% include 'last-call.html' %}
+{% endblock %}

@@ -7,11 +7,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
         <meta name="twitter:card" content="summary_large_image">
-        <meta property="og:site_name" content="">
+        <meta property="og:site_name" content="Home Revive LLC">
         {% block seo %}{% endblock %}
         <link rel="preload" href="{% static 'css/style.css' %}" as="style">
         <link rel="preload" href="{% static 'js/script.js' %}" as="script">
-        <link rel="preload" href="" as="image">
+        <link rel="preload" href="{% static 'images/logo/favicon.ico' %}" as="image">
+        <link rel="preload" href="{% static 'images/logo/logo transparent.png' %}">
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
         <link rel="icon" type="image/ico" href="{% static 'images/logo/favicon.ico' %}" >
 
@@ -42,7 +43,9 @@
                 </div>
                 <nav>
                     <div class="logo-section">
-                        <h1>Logo</h1>
+                        <a href="{% url 'home' %}">
+                            <img src="{% static 'images/logo/logo transparent.png' %}" alt="Home Revive Company Logo" class="header-logo">
+                        </a>
                     </div>
                     <div class="ham-menu mobile">
                         <span></span>
@@ -59,16 +62,13 @@
             <div class="socials">
                 <ul class="social-list">
                     <li>
-                        <a class="social-item" target="_blank" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a class="social-item" target="_blank" href="https://www.facebook.com/profile.php?id=61558919942111"><i class="fa-brands fa-facebook-f"></i></a>
                     </li>
-                    <li>
-                        <a class="social-item" target="_blank" href=""><i class="fa-brands fa-instagram"></i></a>
-                    </li>
-                    <li>
+                    <!-- <li>
                         <a class="social-item" target="_blank" href=""><i class="fa-brands fa-google"></i></a>
-                    </li>
+                    </li> -->
                     <li>
-                        <a class="social-item" target="_blank" href=""><i class="fa-brands fa-yelp"></i></a>
+                        <a class="social-item" target="_blank" href="https://nextdoor.com/pages/home-revive-llc-wheat-ridge-co/"><img src="{% static 'images/home/nextdoor.svg' %}" alt=""></a>
                     </li>
                 </ul>
             </div>
