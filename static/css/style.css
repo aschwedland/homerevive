@@ -461,6 +461,24 @@ nav {
     height: 100%;
     width: 100%;
 }
+/* Thanks Page */
+.thanks {
+    padding: 0 2rem;
+    color: var(--font-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.thanks-title {
+    max-width: 400px;
+}
+.thanks-description {
+    padding-top: 3rem;
+    max-width: 500px;
+}
 /* Coming Soon Page */
 .coming-soon {
     display: flex;

@@ -1,8 +1,12 @@
 from django.shortcuts import render, HttpResponseRedirect
+import requests
 
 # Create your views here.
 def coming_soon(request):
     return render(request, 'coming-soon.html')
+
+def thanks(request):
+    return render(request, 'thank-you.html')
 
 def home(request):
     return render(request, 'home.html')

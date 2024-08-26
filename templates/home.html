@@ -175,12 +175,8 @@ active-link
             </p>
         </div>
     </div>
-    <form action="https://formsubmit.co/homerevivecontracting@gmail.com" method="post" class="contact-form">
-        <input type="hidden" name="_url" value="https://homerevivellc.net">
-        <input type="hidden" name="_subject" value="New Contact Form submission!">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://homerevivellc.net/thank-you">
-        <input type="text" name="_honey" style="display:none">
+    <form class="contact-form">
+        {% csrf_token %}
         <div class="input-group">
             <div class="input">
                 <label for="first" class="input-label">First Name *</label>
@@ -214,7 +210,7 @@ active-link
             <textarea rows="5" name="message" id="message" class="input-field"></textarea>
         </div>
         <div class="submit-btn">
-            <button type="submit" class="btn contact-btn">Submit</button>
+            <button type="button" class="btn contact-btn">Submit</button>
         </div>
     </form>
     <div class="contact-info">
