@@ -243,15 +243,6 @@ nav {
     justify-content: center;
     align-items: center;
 }
-.remodel {
-    background-image: url('/static/images/home/remodel.webp');
-}
-.deck {
-    background-image: url('/static/images/home/deck.webp');
-}
-.appliance-repair {
-    background-image: url('/static/images/home/appliance-repair.webp');
-}
 .home-service-link {
     color: white;
     font-size: 1.5rem;
@@ -417,28 +408,28 @@ nav {
     text-align: center;
 }
 .remodel {
-    background-image: url('/static/images/services/remodel.webp');
+    background-image: url('/static/images/services/large/remodel.webp');
 }
 .exterior-painting {
-    background-image: url('/static/images/services/exteriors.webp');
+    background-image: url('/static/images/services/large/exteriors.webp');
 }
 .appliance-repair {
-    background-image: url('/static/images/services/appliance-repair.webp');
+    background-image: url('/static/images/services/large/appliance-repair.webp');
 }
 .deck {
-    background-image: url('/static/images/services/deck.webp');
+    background-image: url('/static/images/services/large/deck.webp');
 }
 .fence {
-    background-image: url('/static/images/services/fence.webp');
+    background-image: url('/static/images/services/large/fence.webp');
 }
 .kitchen {
-    background-image: url('/static/images/services/kitchen.webp');
+    background-image: url('/static/images/services/large/kitchen.webp');
 }
 .tile {
-    background-image: url('/static/images/services/tile.webp');
+    background-image: url('/static/images/services/large/tile.webp');
 }
 .wood {
-    background-image: url('/static/images/services/wood.webp');
+    background-image: url('/static/images/services/large/wood.webp');
 }
 .specific-image {
     height: 300px;
