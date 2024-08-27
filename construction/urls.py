@@ -15,4 +15,6 @@ urlpatterns = [
     path('appliance-repair', appliance_repair, name='appliance-repair'),
     path('tile-installation', tile, name='tile-installation'),
     path('wood-flooring-installation', wood, name='wood-flooring-installation'),
+    path('sitemap.xml', sitemap, name='sitemap'),
+    path('robots.txt', robot, name='robot')
 ]

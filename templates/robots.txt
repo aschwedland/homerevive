@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /thank-you
+Noindex: /thank-you
+
+Sitemap: https://homerevivellc.net/sitemap.xml

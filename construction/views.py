@@ -46,3 +46,9 @@ def tile(request):
 
 def wood(request):
     return render(request, 'wood.html')
+
+def sitemap(request):
+    return render(request, 'sitemap.xml', content_type='text/xml')
+
+def robot(request):
+    return render(request, 'robots.txt', content_type='text/txt')
