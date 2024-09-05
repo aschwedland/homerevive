@@ -229,6 +229,12 @@ nav {
     padding-bottom: 1rem;
     color: var(--primary);
 }
+.cta-title {
+    padding: 1rem 0 2rem 0;
+}
+.cta-description {
+    padding-bottom: 1rem;
+}
 .home-services {
     text-align: center;
     background-color: #EFEFEF;
@@ -408,28 +414,28 @@ nav {
     text-align: center;
 }
 .remodel {
-    background-image: url('/static/images/services/large/remodel.webp');
+    background-image: url('/static/images/services/remodel.webp');
 }
 .exterior-painting {
-    background-image: url('/static/images/services/large/exteriors.webp');
+    background-image: url('/static/images/services/exteriors.webp');
 }
 .appliance-repair {
-    background-image: url('/static/images/services/large/appliance-repair.webp');
+    background-image: url('/static/images/services/appliance-repair.webp');
 }
 .deck {
-    background-image: url('/static/images/services/large/deck.webp');
+    background-image: url('/static/images/services/deck.webp');
 }
 .fence {
-    background-image: url('/static/images/services/large/fence.webp');
+    background-image: url('/static/images/services/fence.webp');
 }
 .kitchen {
-    background-image: url('/static/images/services/large/kitchen.webp');
+    background-image: url('/static/images/services/kitchen.webp');
 }
 .tile {
-    background-image: url('/static/images/services/large/tile.webp');
+    background-image: url('/static/images/services/tile.webp');
 }
 .wood {
-    background-image: url('/static/images/services/large/wood.webp');
+    background-image: url('/static/images/services/wood.webp');
 }
 .specific-image {
     height: 300px;
@@ -662,6 +668,24 @@ footer {
         max-width: 1700px;
         padding-bottom: 4rem;
     }
+    .cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cta-title {
+        max-width: 850px;
+    }
+    .cta-content {
+        display: flex;
+        gap: 3rem;
+
+    }
+    .cta-description {
+        text-align: left;
+        max-width: 500px;
+    }
     .home-services-title {
         padding: 5rem 0;
     }
@@ -795,6 +819,9 @@ footer {
     .guarantee-description {
         max-width: 800px;
     }
+    .guarantee-title {
+        max-width: 700px;
+    }
     /* Services Page */
     .services-hero {
         padding: 12rem 2rem 4rem 2rem;
@@ -823,6 +850,19 @@ footer {
     .service-info {
         padding: 4rem 2rem 10rem 2rem;
     }
+    .services-cta {
+        text-align: center;
+    }
+    .services-cta-title {
+        max-width: 800px;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    .services-cta-description {
+        max-width: 700px;
+        text-align: center;
+        padding-bottom: 4rem;
+    }
     /* Specific Service */
     .specific-hero {
         display: flex;
@@ -844,7 +884,7 @@ footer {
         justify-content: center;
         align-items: center;
     }
-    .specific-title, .specific-description, .guarantee-title {
+    .specific-title, .specific-description {
         max-width: 660px;
     }
     .specific-overview {

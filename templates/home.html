@@ -7,17 +7,17 @@
 <meta property="og:image" content="{% static 'images/home/hero.webp' %}"/>
 <meta property=”og:image:width” content=”1200″/>
 <meta property=”og:image:height” content=”630″/>
-<meta property="og:description" content="A leading Denver contractor in home remodeling and maintenance. We take pride in our high-quality performance and exceptional customer service."/>
+<meta property="og:description" content="Top-rated home remodeling & maintenance in Denver. Expert services from kitchen remodels to HVAC. Get a free estimate & transform your home today!"/>
 <meta property="og:type" content="website">
-<meta name="description" content="A leading Denver contractor in home remodeling and maintenance. We take pride in our high-quality performance and exceptional customer service.">
+<meta name="description" content="Top-rated home remodeling & maintenance in Denver. Expert services from kitchen remodels to HVAC. Get a free estimate & transform your home today!">
 <link rel="canonical" href="https://homerevivellc.net">
 <link rel="alternate" href="https://homerevivellc.net" hreflang="en"/>
 <!-- Preload Images here -->
  <link rel="preload" href="{% static 'images/home/hero.webp' %}" as="image">
  <link rel="preload" href="{% static 'images/home/about-hero.webp' %}" as="image">
- <link rel="preload" href="{% static 'images/home/remodel.webp' %}" as="image">
- <link rel="preload" href="{% static 'images/home/deck.webp' %}" as="image">
- <link rel="preload" href="{% static 'images/home/appliance-repair.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/services/remodel.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/services/deck.webp' %}" as="image">
+ <link rel="preload" href="{% static 'images/services/appliance-repair.webp' %}" as="image">
  <link rel="preload" href="{% static 'images/home/nextdoor.svg' %}" as="image">
 {% endblock %}
 
@@ -32,22 +32,22 @@ active-link
 {% block main %}
 <section class="hero background-image" title="Denver Skyline">
     <h1 class="title hero-title">
-        Exceptional Home Remodeling & Maintenance
+        Exceptional Home Remodeling & Maintenance in Denver, CO
     </h1>
     <div class="btn-area">
-        <a href="{% url 'contact' %}" class="btn">Get A Free Estimate</a>
+        <a href="{% url 'contact' %}" class="btn">Request Your Free Estimate Today</a>
     </div>
 </section>
 <section class="home-about">
     <div class="home-about-info">
         <h2 class="home-about-title">
-            Best Maintenance Company in Denver
+            Best Home Maintenance and Remodeling Company in Denver, CO
         </h2>
         <p class="description home-about-description">
-            We take pride in being Denver's top choice for home maintenance. With years of hands-on experience, we know what it takes to keep your home in tip-top shape, whether it's tackling those tricky plumbing issues, keeping your HVAC system running smoothly, or fixing any broken appliances. We don't just fix problems; we prevent them, saving you time, money, and stress in the long run. Our team is committed to providing reliable, top-notch service that ensures your home stays safe, comfortable, and efficient. When it comes to maintenance, we're the experts Denver homeowners trust.
+            We take pride in being Denver's top choice for home remodeling and maintenance. With years of hands-on experience, we know what it takes to keep your home in perfect condition, whether it's tackling those tricky plumbing issues, keeping your HVAC system running smoothly, or fixing any broken appliances. We don't just fix problems; we prevent them, saving you time, money, and stress in the long run. Our team is committed to providing reliable, high-quality service that ensures your home stays safe, comfortable, and efficient. When it comes to home maintenance and remodeling, we're the experts Denver homeowners trust.
         </p>
         <div class="btn-area">
-            <a href="{% url 'about' %}" class="secondary-btn btn">More About Us</a>
+            <a href="{% url 'about' %}" class="secondary-btn btn">Learn More About Our Services</a>
         </div>
     </div>
     <div class="home-about-image background-image" title="New modern kitchen blue gray"></div>
@@ -68,10 +68,10 @@ active-link
         </div>
         <div class="reason">
             <h3 class="secondary-title reason-title">
-                Free, At Home Consultations
+                Free, In-Home Consultations
             </h3>
             <p class="description">
-                Whether it’s a kitchen overhaul or a new deck, we’ll walk through the details with you and figure out the best plan to bring your ideas to life.
+                Whether it’s a kitchen remodel, a bathroom upgrade, or a new deck installation, we’ll walk through the details with you and figure out the best plan to bring your ideas to life.
             </p>
         </div>
         <div class="reason">
@@ -92,6 +92,19 @@ active-link
             </p>
         </div>
     </div>
+    <div class="cta">
+        <h2 class="cta-title secondary-title">
+            Transform Your Home with Expert Remodeling & Maintenance Services
+        </h2>
+        <div class="cta-content">
+            <p class="description cta-description">
+                When you choose Home Revive for your home remodeling and maintenance needs in Denver, you're not just hiring a contractor – you're partnering with a team dedicated to enhancing the value, comfort, and efficiency of your home. Our expert services go beyond just fixing what's broken; we focus on delivering long-lasting solutions that improve your quality of life. From upgrading your kitchen to the latest designs, remodeling your bathroom for modern comfort, or ensuring your HVAC system is ready for all seasons, we tailor our services to meet your specific needs.
+            </p>
+            <p class="description cta-description">
+                Enjoy peace of mind knowing that your home is being cared for by professionals who are as invested in its upkeep as you are. Let us help you create a home that's not only beautiful but also functional and efficient, saving you time and reducing energy costs. Choose Home Revive – where quality remodeling meets dependable maintenance.
+            </p>
+        </div>
+    </div>
 </section>
 <section class="home-services">
     <h2 class="secondary-title home-services-title">
@@ -109,7 +122,7 @@ active-link
         </div>
     </div>
     <div class="home-services-btn-area btn-area">
-        <a href="{% url 'services' %}" class="secondary-btn btn">See All Services</a>
+        <a href="{% url 'services' %}" class="secondary-btn btn">Explore All Our Services</a>
     </div>
 </section>
 <!-- <section class="testimonial-section">
@@ -171,7 +184,7 @@ active-link
                 Service Areas:
             </h6>
             <p class="description">
-                Denver, Wheat Ridge, Lakewood, Arvada
+                Denver, Wheat Ridge, Lakewood, Arvada, Aurora, Littleton
             </p>
         </div>
     </div>

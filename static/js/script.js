@@ -42,7 +42,7 @@ if (submitBtn != null) {
                     window.location.href = response.url;
                 })
             } else {
-                console.log('No worky')
+                alert("Something went wrong on our end. Please call us and we will get this resolved as quickly as possible")
             }
         })
         
