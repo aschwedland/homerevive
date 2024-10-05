@@ -165,7 +165,7 @@ nav {
     padding: 2rem 0;
 }
 .hero {
-    background-image: url('/static/images/home/hero.webp');
+    background-image: url('/static/images/home/home-remodel-maintenance-in-denver-co.webp');
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -200,7 +200,7 @@ nav {
 .home-about-image {
     height: 350px;
     width: 100%;
-    background-image: url('/static/images/home/about-hero.webp');
+    background-image: url('/static/images/home/kitchen-remodel-in-denver-co.webp');
 }
 .why-us {
     padding: 2rem;
@@ -330,7 +330,7 @@ nav {
     padding-bottom: 1rem;
 }
 .about-hero-image {
-    background-image: url('/static/images/about/about-hero.webp');
+    background-image: url('/static/images/about/kitchen-remodel-in-denver-co.webp');
     height: 350px;
     width: 100%;
 }
@@ -414,32 +414,99 @@ nav {
     text-align: center;
 }
 .remodel {
-    background-image: url('/static/images/services/remodel.webp');
+    background-image: url('/static/images/services/home-remodel-in-denver-co.webp');
 }
 .exterior-painting {
-    background-image: url('/static/images/services/exteriors.webp');
+    background-image: url('/static/images/services/exterior-painting-in-denver-co.webp');
 }
 .appliance-repair {
-    background-image: url('/static/images/services/appliance-repair.webp');
+    background-image: url('/static/images/services/appliance-repair-in-denver-co.webp');
 }
 .deck {
-    background-image: url('/static/images/services/deck.webp');
+    background-image: url('/static/images/services/deck-installation-repair-in-denver-co.webp');
 }
 .fence {
-    background-image: url('/static/images/services/fence.webp');
+    background-image: url('/static/images/services/fence-repair-installation-in-denver-co.webp');
 }
 .kitchen {
-    background-image: url('/static/images/services/kitchen.webp');
+    background-image: url('/static/images/services/interior-painting-in-denver-co.webp');
 }
 .tile {
-    background-image: url('/static/images/services/tile.webp');
+    background-image: url('/static/images/services/tile-installation-in-denver-co.webp');
 }
 .wood {
-    background-image: url('/static/images/services/wood.webp');
+    background-image: url('/static/images/services/wood-flooring-installation-denver-co.webp');
 }
 .specific-image {
     height: 300px;
     width: 100%;
+}
+.faqs {
+    background-color: #F9F9F9;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.faq-section {
+    padding: 3rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+}
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.faq-item {
+    background-color: var(--tertiary);
+    padding: 1.5rem 1rem;
+    border-radius: 35px;
+    width: 100%;
+    max-width: 375px;
+    min-width: 340px;
+}
+.faq-title {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-panel {
+    padding-top: 2rem;
+    display: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 500ms ease;
+}
+.faq-chevron {
+    transition: all 600ms ease;
+}
+.faq-panel.active {
+    display: block;
+}
+.faqs-title {
+    text-align: center;
+}
+.faq-panel p:last-of-type {
+    margin-bottom: 0;
+}
+.specific-item {
+    padding-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.7;
+}
+.specific-item:last-child {
+    padding-bottom: 0;
+}
+.specific-paragraph {
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
 }
 /* Contact Page */
 .contact-page {
@@ -673,6 +740,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 0 auto;
     }
     .cta-title {
         max-width: 850px;
@@ -784,7 +852,7 @@ footer {
         padding: 0 1rem;
     }
     .about-hero-title, .about-hero-description {
-        max-width: 500px;
+        max-width: 700px;
     }
     .process {
         display: flex;
@@ -826,6 +894,9 @@ footer {
     .services-hero {
         padding: 12rem 2rem 4rem 2rem;
     }
+    .services-title {
+        max-width: 900px;
+    }
     .services {
         margin: 0 auto;
         max-width: 90%;
@@ -858,10 +929,14 @@ footer {
         text-align: center;
         padding-bottom: 2rem;
     }
+    .services-cta-content {
+        flex-direction: column;
+        gap: 1rem;
+        padding-bottom: 4rem;
+    }
     .services-cta-description {
         max-width: 700px;
         text-align: center;
-        padding-bottom: 4rem;
     }
     /* Specific Service */
     .specific-hero {
@@ -889,6 +964,34 @@ footer {
     }
     .specific-overview {
         padding-bottom: 4rem;
+    }
+    .faqs {
+        padding: 6rem 2rem;
+    }
+    .faqs-title {
+        padding-bottom: 4rem;
+    }
+    .faq {
+        width: 500px;
+        max-width: none;
+    }
+    .faq-section {
+        flex-direction: row;
+        align-items: start;
+        gap: 3rem;
+    }
+    .faq-title {
+        gap: 1rem;
+    }
+    .faq-title:hover {
+        cursor: pointer;
+    }
+    .faq-item {
+        width: 500px;
+    }
+    .specific-list {
+        padding: 2rem 0;
+        max-width: 500px;
     }
     /* Contact Page */
     .contact-page {
